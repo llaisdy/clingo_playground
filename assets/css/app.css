@@ -1,0 +1,93 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* This file is for your main application CSS */
+
+table { border-collapse: collapse; }
+colgroup, tbody { border: solid medium; }
+
+/* tailwind css for button */
+.btn {
+    @apply my-6 font-bold py-2 px-4 rounded;
+}
+.btn-blue {
+    @apply bg-blue-500 text-white;
+}
+.btn-blue:hover {
+    @apply bg-blue-700;
+}
+.btn-green {
+    @apply bg-green-500 text-white;
+}
+.btn-green:hover {
+    @apply bg-green-700;
+}
+
+div.header {
+    @apply py-2 w-full;
+    background: #ffffcc;
+    border-bottom: 3px solid #aaaa88;
+}
+
+div.header h1 {
+    @apply font-sans font-semibold text-2xl text-blue-500 text-center;
+}
+
+div.main {
+    @apply px-4 py-20 sm:px-6 lg:px-8 mx-auto max-w-2xl
+}
+
+input {
+  font-size: inherit;
+  text-align: center;
+  width: 3em;
+  height: 3em;
+  margin: 0;
+  padding: 0;
+  border: 1px solid grey;
+}
+
+input.innerNE {
+    border-top: solid black;
+    border-right: solid black;
+}
+
+input.innerNW {
+    border-top: solid black;
+    border-left: solid black;
+}
+
+input.innerSE {
+    border-bottom: solid black;
+    border-right: solid black;
+}
+
+input.innerSW {
+    border-bottom: solid black;
+    border-left: solid black;
+}
+
+input.empty {
+  background: white;
+}
+
+input.question {
+  font-weight: bold;
+  color: black;
+  background: #ffff66;
+}
+
+input.answer {
+  background: #ffffcc;
+}
+
+p.ok {
+  font-weight: bold;
+  color: green;
+}
+
+p.error {
+  font-weight: bold;
+  color: red;
+}
